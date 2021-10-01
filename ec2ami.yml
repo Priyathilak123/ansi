@@ -1,0 +1,11 @@
+---
+ - hosts: localhost
+    tasks:
+      ec2_ami:
+        instance_id: i-0e9524135b411361d
+        wait: yes
+        name: newtest
+        tags:
+        Name: newtest
+        Service: TestService
+
